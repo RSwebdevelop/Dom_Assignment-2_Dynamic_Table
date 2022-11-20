@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic-Table</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+        <h1>To-Do List</h1>  
+        <form action="#" class="info">
+            <label for="name"></label>
+            <div class="details">Name <input type="text" id="name" placeholder="Enter your name" name="name" /></div>
+            <label for="email"></label>
+            <div class="details">Email<input type="email" id="email" name="email" required autofocus /></div>
+            <label for="Number"></label>
+            <div class="details">Ph-No<input type="Number" id="number" /></div>
+            <button type="submit" id="add-row">Add Row</button>
+        </form>
+        <div class="error_text"></div>
+        <!-- table starts from here -->
+
+        <table id="table">
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Mob-No :</th>
+              <th>Action</th>
+            </tr>
+        </table>     
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
